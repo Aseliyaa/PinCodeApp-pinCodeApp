@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PinCodeApp</string>
+    <string name="enter_code">Введите код</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="fife">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    <string name="ok">OK</string>
+    <string name="delete"><![CDATA[<]]></string>
+    <string name="correct_pin">\"Код верен!\"</string>
+    <string name="code_num_text">%1$d</string>
+    <string name="personal_page">Личная страница</string>
+    <string name="share">Поделиться</string>
+    <string name="email">Отправить по почте</string>
+    <string name="call">Позвонить</string>
+    <string name="camera">Запустить камеру</string>
+    <string name="userEmail">azatserzhan@gmail.com</string>
+    <string name="userName">Azat Serzhanov</string>
+</resources>

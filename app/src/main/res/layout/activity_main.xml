@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/fife"
+        style="@style/PinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fife"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/four"
+        style="@style/PinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/gap"
+        android:text="@string/four"
+        app:layout_constraintBottom_toBottomOf="@id/fife"
+        app:layout_constraintEnd_toStartOf="@id/fife" />
+
+    <Button
+        android:id="@+id/six"
+        style="@style/PinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap"
+        android:text="@string/six"
+        app:layout_constraintBottom_toBottomOf="@id/fife"
+        app:layout_constraintStart_toEndOf="@id/fife" />
+
+    <Button
+        android:id="@+id/eight"
+        style="@style/PinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap"
+        android:text="@string/eight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fife" />
+
+    <Button
+        android:id="@+id/seven"
+        style="@style/PinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/gap"
+        android:text="@string/seven"
+        app:layout_constraintBottom_toBottomOf="@id/eight"
+        app:layout_constraintEnd_toStartOf="@id/eight" />
+
+    <Button
+        android:id="@+id/nine"
+        style="@style/PinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap"
+        android:text="@string/nine"
+        app:layout_constraintBottom_toBottomOf="@id/eight"
+        app:layout_constraintStart_toEndOf="@+id/eight" />
+
+    <Button
+        android:id="@+id/one"
+        style="@style/PinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/gap"
+        android:text="@string/one"
+        app:layout_constraintBottom_toBottomOf="@id/two"
+        app:layout_constraintEnd_toStartOf="@id/two" />
+
+    <Button
+        android:id="@+id/two"
+        style="@style/PinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/gap"
+        android:text="@string/two"
+        app:layout_constraintBottom_toTopOf="@id/fife"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/three"
+        style="@style/PinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap"
+        android:text="@string/three"
+        app:layout_constraintBottom_toBottomOf="@id/two"
+        app:layout_constraintStart_toEndOf="@+id/two" />
+
+    <Button
+        android:id="@+id/del"
+        style="@style/PinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/gap"
+        android:text="@string/delete"
+        app:layout_constraintBottom_toBottomOf="@id/zero"
+        app:layout_constraintEnd_toStartOf="@id/zero" />
+
+    <Button
+        android:id="@+id/zero"
+        style="@style/PinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap"
+        android:text="@string/zero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eight" />
+
+    <Button
+        android:id="@+id/ok"
+        style="@style/PinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap"
+        android:text="@string/ok"
+        android:background="@drawable/green_btn_background"
+        app:layout_constraintBottom_toBottomOf="@id/zero"
+        app:layout_constraintStart_toEndOf="@+id/zero" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/code_num1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            style="@style/PinButton"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/code_num2"
+            android:layout_width="45dp"
+            style="@style/PinButton"
+            android:layout_marginEnd="4dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/code_num3"
+            android:layout_width="45dp"
+            android:layout_marginEnd="4dp"
+            android:layout_height="45dp"
+            style="@style/PinButton"
+            android:layout_weight="1"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/code_num4"
+            android:layout_width="45dp"
+            style="@style/PinButton"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

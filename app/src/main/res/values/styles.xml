@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PinButton" parent="Widget.AppCompat.Button">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">@color/btn_blue</item>
+        <item name="android:background">@drawable/btn_background</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="PersonalPageButton" parent="Widget.AppCompat.Button">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/btn_blue</item>
+        <item name="android:background">@drawable/btn_background</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="PiText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="hintTextColor">@color/enter_code</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="PersonalPageText" parent="Widget.AppCompat.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="Nav" parent="ThemeOverlay.Material3.NavigationView">
+        <item name="backgroundColor">@color/white</item>
+    </style>
+</resources>
